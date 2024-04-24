@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio_10</title>
+</head>
+<body>
+    <script>
+        function calcularPoligono(lados, medidaLado) {
+    if (lados === 3) {
+        const perimetro = lados * medidaLado;
+        return "TRIÂNGULO - Perímetro: " + perimetro + " cm";
+    } else if (lados === 4) {
+        const area = medidaLado ** 2;
+        return "QUADRADO - Área: " + area + " cm²";
+    } else if (lados === 5) {
+        return "PENTÁGONO";
+    } else if (lados < 3) {
+        return "NÃO É UM POLÍGONO";
+    } else {
+        return "POLÍGONO NÃO IDENTIFICADO";
+    }
+}
+
+const numeroLados = parseInt(prompt("Informe o número de lados do polígono:"));
+const medidaLado = parseFloat(prompt("Informe a medida do lado (em cm):"));
+
+const resultado = calcularPoligono(numeroLados, medidaLado);
+alert(resultado);
+
+    </script>
+    
+</body>
+</html>

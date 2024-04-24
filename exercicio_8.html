@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio_8</title>
+</head>
+<body>
+    <script>
+        function determinarVencedor(corinthians, palmeiras) {
+    if (corinthians > palmeiras) {
+        return "Corinthians";
+    } else if (palmeiras > corinthians) {
+        return "Palmeiras";
+    } else {
+        return "EMPATE";
+    }
+}
+
+const corinthians = parseInt(prompt("Quantos gols o Corinthians marcou?"));
+const palmeiras = parseInt(prompt("Quantos gols o Palmeiras marcou?"));
+
+const vencedor = determinarVencedor(corinthians, palmeiras);
+alert("O vencedor é: " + vencedor);
+    </script>
+    
+</body>
+</html>

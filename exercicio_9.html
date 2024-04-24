@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio_9</title>
+</head>
+<body>
+    <script>
+     function calcularOperacao(valor1, valor2, operacao) {
+    switch (operacao) {
+        case 1:
+            return valor1 + valor2;
+        case 2:
+            return valor1 - valor2;
+        case 3:
+            if (valor2 !== 0) {
+                return valor1 / valor2;
+            } else {
+                return "Não é possível dividir por zero.";
+            }
+        case 4:
+            return valor1 * valor2;
+        default:
+            return "Operação inválida.";
+    }
+}
+
+const valor1 = parseInt(prompt("Escreva o 1º número:"));
+const valor2 = parseInt(prompt("Escreva o 2º número:"));
+const operacao = parseInt(prompt("Informe a operação desejada:\n1. Adição\n2. Subtração\n3. Divisão\n4. Multiplicação"));
+
+const resultado = calcularOperacao(valor1, valor2, operacao);
+alert("O resultado do cálculo é: " + resultado);
+
+    </script>
+</body>
+</html>

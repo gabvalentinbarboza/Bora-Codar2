@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio_7</title>
+</head>
+<body>
+    <script>
+        function calcularValorCompra(numeroMacas) {
+    if (numeroMacas < 12) {
+        return numeroMacas * 3.5; // Preço por maçã 
+    } else {
+        return numeroMacas * 2.5; // Preço por maçã
+    }
+}
+
+const quantidadeMacas = parseInt(prompt("Quantas maçãs você quer?"));
+
+const valorTotal = calcularValorCompra(quantidadeMacas);
+alert("O valor total é: R$" + valorTotal.toFixed(2));
+
+    </script>
+    
+</body>
+</html>
